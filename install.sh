@@ -88,6 +88,10 @@ checkCPUVendor() {
 				xrayCoreCPUVendor="Xray-linux-arm64-v8a"
 				v2rayCoreCPUVendor="v2ray-linux-arm64-v8a"
 				;;
+                        's390x' | 'aarch64')
+				xrayCoreCPUVendor="Xray-linux-s390x"
+				v2rayCoreCPUVendor="v2ray-linux-64"
+				;;
 			*)
 				echo "  不支持此CPU架构--->"
 				exit 1
